@@ -54,6 +54,13 @@ h1 {
 .projects-links {
   font-family: "Syne", sans-serif;
 }
-.span{
-  
+.footer-brand-name h1 {
+  font-size: 175px !important;
+  font-weight: 700 !important;
+  font-family: "Syne", sans-serif;
+  color: #ffe9d9;
+}
+.navbar-bg {
+  background-image: linear-gradient(to right, #ffffff1c, #ff9b3f29);
+  backdrop-filter: blur(5px);
 }
