@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinku Rathour</title>
     <meta name="description" content="Portfolio Website">
     <meta name="keywords" content="Tailwind, CSS, JavaScript, Jquery">
     <meta name="author" content="Pinku Rathour">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<style>
-    .offcanvas {
-        transition: transform 0.3s ease, visibility 0.3s ease;
-        transform: translateX(100%);
-        visibility: hidden;
-    }
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .offcanvas {
+            transition: transform 0.3s ease, visibility 0.3s ease;
+            transform: translateX(100%);
+            visibility: hidden;
+        }
 
-    .offcanvas.visible {
-        transform: translateX(0);
-        visibility: visible;
-    }
-</style>
+        .offcanvas.visible {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    </style>
+</head>
 
 <body>
-    <nav class="flex justify-between items-center w-full border-b border-b-gray-700 border-opacity-45 fixed navbar-bg">
+    <nav class="flex justify-between items-center w-full lg:w-full border-b border-b-gray-700 border-opacity-45 fixed navbar-bg"
+        id="top">
         <div class="navbrand ps-5 w-auto">
-            <a href="index.html"><img src="./assets/images/logo.png" alt="" /></a>
+            <a href="index.html"><img src="./assets/images/logo.png" alt="Logo" /></a>
         </div>
         <div class="flex w-auto items-center gap-3">
-            <a href="####" class="inline-flex items-center gap-3 text-base font-medium">Let's Talk <span
+            <a href="#" class="inline-flex items-center gap-3 text-base font-medium">Let's Talk <span
                     class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span></a>
             <div class="w-[95px] h-[80px] bg-black flex justify-center items-center cursor-pointer"
                 onclick="toggleFunction()">
@@ -40,60 +41,66 @@
         </div>
     </nav>
 
-    <!-- ============Hero section============ -->
-    <section class="w-full bg-[#FFE9D9]">
-        <div class="grid lg:grid-cols-2 grid-cols-1 items-center">
-            <div class="lg:p-24">
-                <span class="flex items-center gap-3">
-                    <span class="w-16 h-0.5 bg-black"></span>
-                    <p class="text-2xl font-bold opacity-80">Hello, I’m 👋</p>
-                </span>
-                <h1 class="py-3">Pinku Rathour</h1>
-
-                <p class="text-2xl font-bold opacity-80 leading-10">Frontend & UI/UX Developer</p>
-                <div class="flex items-center gap-5 py-3">
-                    <a class="hover:bg-transparent hover:text-black duration-500 px-6 py-3 border-gray-400 border rounded-lg bg-black text-white text-base font-semibold inline-flex items-center gap-3"
-                        href="">
-                        Let's Talk <span class="iconify text-2xl hover:text-black"
-                            data-icon="tabler:arrow-up-right"></span>
-                    </a>
-                    <a class="px-6 py-3 border-gray-400 border rounded-lg text-black text-base font-semibold inline-flex items-center gap-3"
-                        href="">My Work <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span></a>
-                </div>
-                <div class="flex w-full items-center pt-8 gap-6">
-                    <h3 class="text-2xl font-bold opacity-80 leading-10"><span class="text-4xl font-bold">1.2k+</span>
-                        Worldwide client &nbsp;<span class="text-gray-800">|</span></h3>
-                    <ul class="flex items-center gap-4">
-                        <li>
-                            <a target="_blank" href="https://github.com/Npkrathour"><span
-                                    class="iconify text-3xl text-black" data-icon="bi:github"></span></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/pinkurathour/"><span
-                                    class="iconify text-3xl text-black"
-                                    data-icon="entypo-social:linkedin-with-circle"></span></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://dribbble.com/npkrathour"><span
-                                    class="iconify text-3xl text-black" data-icon="icon-park-solid:dribble"></span></a>
-                        </li>
-                    </ul>
+    <!-- Hero section -->
+    <section class="w-full lg:w-auto bg-[#FFE9D9] lg:py-0 md:py-0 py-10">
+        <div class="grid w-full lg:w-auto lg:grid-cols-2 grid-cols-1 items-center">
+            <div class="xl:p-24 lg:pt-20 pt-20">
+                <div class="p-5">
+                    <span class="flex items-center gap-3 ">
+                        <span class="w-16 h-0.5 bg-black"></span>
+                        <p class="text-2xl font-bold opacity-80">Hello, I’m 👋</p>
+                    </span>
+                    <h1 class="py-3 ">Pinku Rathour</h1>
+                    <p class="text-2xl font-bold opacity-80 leading-10 ">Frontend & UI/UX Developer</p>
+                    <div class="flex items-center gap-5 py-3 ">
+                        <a class="hover:bg-transparent hover:text-black duration-500 px-6 py-3 border-gray-400 border rounded-lg bg-black text-white text-base font-semibold inline-flex items-center gap-3"
+                            href="#contact">
+                            Let's Talk <span class="iconify text-2xl hover:text-black"
+                                data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                        <a class="px-6 py-3 border-gray-400 border rounded-lg text-black text-base font-semibold inline-flex items-center gap-3"
+                            href="#">My Work <span class="iconify text-2xl"
+                                data-icon="tabler:arrow-up-right"></span></a>
+                    </div>
+                    <div class="flex w-full flex-wrap items-center xl:pt-8 gap-6 lg:py-0 md:py-0 py-2">
+                        <h3 class="text-2xl font-bold opacity-80 leading-10"><span
+                                class="text-4xl font-bold">1.2k+</span>
+                            Worldwide client &nbsp;<span class="text-gray-800">|</span></h3>
+                        <ul class="flex items-center gap-4 ">
+                            <li>
+                                <a target="_blank" href="https://github.com/Npkrathour"><span
+                                        class="iconify text-3xl text-black" data-icon="bi:github"></span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/in/pinkurathour/"><span
+                                        class="iconify text-3xl text-black"
+                                        data-icon="entypo-social:linkedin-with-circle"></span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://dribbble.com/npkrathour"><span
+                                        class="iconify text-3xl text-black"
+                                        data-icon="icon-park-solid:dribble"></span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="">
-                <div class="w-full">
-                    <img class="w-full object-cover" src="./assets/images/hero.png" alt="" />
+            <div class="xl:-mt-11 xl:block lg:block sm:hidden hidden">
+                <div class="w-full lg:w-auto">
+                    <img class="w-full xl:w-full object-cover" src="./assets/images/hero.png" alt="Hero Image" />
                 </div>
             </div>
         </div>
     </section>
-    <!-- =====================service section============ -->
-    <section class="w-full py-16 flex justify-between items-center">
-        <div class="container w-[1400px] mx-auto px-8">
+
+    <!-- Service section -->
+    <section class="w-full py-16 flex justify-between items-center overflow-hidden">
+        <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div class="grid lg:grid-cols-2 md:grid-cols-2 justify-center items-center">
                 <div class="relative">
-                    <h3 class="text-xl font-bold heading-3 leading-9">Services</h3>
-                    <h2 class="text-7xl font-bold opacity-80 leading-10 pt-4">My specialties</h2>
+                    <h3 class="text-xl  font-bold heading-3 leading-9">Services</h3>
+                    <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold opacity-80 leading-10 pt-4">My specialties
+                    </h2>
                     <div class="absolute top-8 -left-2 w-20 h-20 rounded-full bg-yellow-500 -z-10"></div>
                 </div>
                 <div class="w-full">
@@ -102,66 +109,68 @@
                     </p>
                 </div>
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 py-10 my-10 justify-center gap-3">
-                <div class="col-span-2">
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 items-center justify-center">
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:py-10 lg:my-10 py-4 justify-center gap-3">
+                <div class="lg:col-span-2">
+                    <div
+                        class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 gap-2 items-center justify-center">
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-5.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-5.png" alt="UI/UX Design Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold w-20">UI/UX design</h4>
+                                <h4 class="lg:text-xl text-base font-bold w-20">UI/UX design</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-2.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-2.png" alt="Brand Identity Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold w-20">Brand Identity</h4>
+                                <h4 class="lg:text-xl text-base font-bold w-20">Brand Identity</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-3.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-3.png"
+                                    alt="Webflow Development Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold w-20">Webflow Development</h4>
+                                <h4 class="lg:text-xl text-base font-bold w-20">Webflow Development</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-1.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-1.png" alt="Interaction Design Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold w-20">Interaction design</h4>
+                                <h4 class="lg:text-xl text-base font-bold w-20">Interaction design</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-4.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-4.png" alt="Website Design Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold w-20">Website design</h4>
+                                <h4 class="lg:text-xl text-base font-bold w-20">Website design</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
                         <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
-                                <img class="w-7" src="./assets/images/icons/icon-6.png" alt="" />
+                                <img class="w-7" src="./assets/images/icons/icon-6.png" alt="Mobile App Design Icon" />
                             </div>
                             <div class="flex justify-between items-center pt-14">
-                                <h4 class="text-xl font-bold">Mobile App design</h4>
+                                <h4 class="lg:text-xl text-base font-bold">Mobile App design</h4>
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
@@ -171,19 +180,18 @@
                     <div class="flex text-end justify-end">
                         <span class="iconify text-8xl text-yellow-500" data-icon="tabler:arrow-up-right"></span>
                     </div>
-
                     <div class="pt-48">
                         <p class="text-lg font-medium text-yellow-500">SAY HELLO</p>
                         <a href="mailto:pinkurathour2016@gamil.com"
-                            class="text-xl font-bold text-white">pinkurathour2016@gmail.com</a>
+                            class="xl::text-xl lg:text-base text-xs font-bold text-white">pinkurathour2016@gmail.com</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ===============About me============= -->
-    <section class="w-full flex justify-between items-center">
-        <div class="container w-[1400px] mx-auto px-8">
+    <!-- ============================= -->
+    <section class="w-full flex justify-between items-center overflow-hidden">
+        <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div class="grid lg:grid-cols-2 items-center justify-center">
                 <div class="relative">
                     <div class="w-full h-[600]">
@@ -191,17 +199,20 @@
                     </div>
                     <div class="absolute -bottom-3 -right-32 z-10">
                         <div class="text-start w-1/2">
-                            <h4 class="text-7xl font-bold">02 +</h4>
-                            <h4 class="text-5xl font-bold py-5 strock-text">Years of experience</h4>
-                            <div class="absolute bottom-28 py-2 -left-1 w-28 h-28 rounded-full bg-yellow-500 -z-10">
+                            <h4 class="lg:text-7xl text-5xl font-bold">02 +</h4>
+                            <h4 class="lg:text-5xl md:text-4xl text-4xl font-bold py-5 strock-text">Years of experience
+                            </h4>
+                            <div
+                                class="absolute bottom-28 py-2 -left-1 lg:w-28 lg:h-28 w-20 h-20 rounded-full bg-yellow-500 -z-10">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-full">
+                <div class="w-full lg:pt-0 pt-10">
                     <h4 class="text-xl font-bold heading-3 leading-9">Hello I'm</h4>
-                    <h2 class="text-7xl font-bold">Pinku Rathour, Frontend & UI/UX Developer</h2>
-                    <h3 class="text-5xl font-bold opacity-80">Based In India</h3>
+                    <h2 class="xl:text-7xl lg:text-4xl text-2xl font-bold">Pinku Rathour, Frontend & UI/UX Developer
+                    </h2>
+                    <h3 class="xl:text-5xl lg:text-3xl text-xl font-bold opacity-80">Based In India</h3>
 
                     <p class="text-lg font-medium text-gray-500 py-4">
                         That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only
@@ -224,7 +235,7 @@
                         </div>
                     </div>
                     <div class="py-4">
-                        <a class="hover:bg-transparent hover:text-black duration-500 px-8 py-3 border-gray-400 border rounded-lg bg-black text-white text-base font-semibold inline-flex items-center gap-3"
+                        <a class="hover:bg-transparent hover:text-black duration-500 xl:px-8 lg:px-6 px-4 py-3 lg:w-1/2 w-full border-gray-400 border rounded-lg bg-black text-white text-base font-semibold inline-flex items-center gap-3 justify-between"
                             href="./assets/images/Pinku.Resume.pdf" Download>
                             Download My Resume <span class="iconify text-2xl hover:text-black"
                                 data-icon="tabler:arrow-up-right"></span>
@@ -235,16 +246,19 @@
         </div>
     </section>
     <!-- ============My Resume section============ -->
-    <div class="w-full flex justify-center items-center bg-[#F5F5F5 py-20 my-10">
-        <div class="container w-[1400px] mx-auto px-8">
-            <div class="grid lg:grid-cols-3 gap-5 justify-between">
+    <div
+        class="w-full flex justify-center items-center bg-[#F5F5F5 lg:py-20 lg:my-10 md:py-20 md:my-10 py-5 overflow-hidden">
+        <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
+            <div
+                class="grid xl:grid-cols-3 lg:grid-cols-3 lg:gap-5 w-full gap-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xl:justify-between lg:justify-between justify-center">
                 <div class="py-4">
                     <div class="relative">
                         <h3 class="text-xl font-bold heading-3 leading-9">Resume</h3>
-                        <h2 class="text-7xl font-bold pt-4">All over my details find here...</h2>
+                        <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-4">All over my details find here...
+                        </h2>
                         <div class="absolute top-12 -left-2 w-20 h-20 rounded-full bg-yellow-500 -z-10"></div>
                     </div>
-                    <div class="">
+                    <div class="lg:pt-0 pt-3">
                         <ul class="w-full my-5">
                             <li class="py-4 bg-black text-white p-3 rounded-lg my-5 tabs1" onclick="tabFunction1()">
                                 <a class="text-xl font-semibold flex justify-between items-center w-full text-white"
@@ -281,7 +295,7 @@
                     </div>
                 </div>
                 <div class="col-span-2">
-                    <div class="px-8 py-4 tabs-1 block" id="tab-1">
+                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 tabs-1 block" id="tab-1">
                         <h3 class="text-4xl font-bold opacity-80">Based In India</h3>
                         <p class="text-lg font-medium text-gray-500 py-4">
                             Pinku Rathour, <span class="text-black">Frontend UI Developer</span> based in <span
@@ -291,59 +305,81 @@
                         </p>
                         <p class="text-lg py-3 font-medium text-gray-500">but words that truly land with those that read
                             them, calling your audience in and making them want more</p>
-                        <div class="w-2/3 pt-16">
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                        <div class="w-2/3 xl:pt-16 lg:pt-0">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Name
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">Pinku Rathour</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+                                    Pinku
+                                    Rathour
+                                </h5>
                             </span>
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Nationality
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">Indian</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+                                    Indian
+                                </h5>
                             </span>
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Email
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
                                     pinkurathour2016@gamil.com
                                 </h5>
                             </span>
 
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Phone
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">(+91) 7355462016</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+
+                                    7355462016</h5>
                             </span>
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Experience
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">02 Years</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+                                    02
+                                    Years
+                                </h5>
                             </span>
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Freelance
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">Available</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+                                    Available
+                                </h5>
                             </span>
-                            <span class="flex justify-between items-center py-2">
-                                <p class="text-xl font-medium opacity-70 family">
+                            <span class="flex justify-between items-center xl:py-2 lg:py-1">
+                                <p class="xl:text-xl lg:text-lg text-base font-medium opacity-70 family">
                                     Language
                                 </p>
-                                <h5 class="w-1/2 text-2xl font-bold opacity-80 text-start">English , Hindi</h5>
+                                <h5
+                                    class="w-1/2 xl:text-2xl lg:text-xl text-base lg:font-bold font-semibold opacity-80 text-start">
+                                    English ,
+                                    Hindi
+                                </h5>
                             </span>
                         </div>
                     </div>
-                    <div class="px-8 py-4 hidden" id="tab-2">
+                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 hidden" id="tab-2">
                         <h3 class="text-4xl font-bold opacity-80">Experience</h3>
-                        <div class="my-5 flex flex-wrap justify-between gap-3 items-center w-full">
+                        <div class="my-5 flex flex-wrap justify-between xl:gap-3 lg:gap-0 items-center w-full">
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">01 Sep 2023 - 01 July 2024 </p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -353,7 +389,7 @@
                                 </div>
                             </div>
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">05/2023 - 09/2023</p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -364,7 +400,7 @@
                                 </div>
                             </div>
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">01/2023 - 05/2023</p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -374,7 +410,7 @@
                                 </div>
                             </div>
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">09/2022 - 12/2023</p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -385,9 +421,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="px-8 py-4 hidden" id="tab-3">
+                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 hidden" id="tab-3">
                         <h3 class="text-4xl font-bold opacity-80">Education</h3>
-                        <div class="my-5 flex flex-wrap justify-between gap-3 items-center w-full">
+                        <div class="my-5 flex flex-wrap justify-between xl:gap-3 lg:gap-0 items-center w-full">
                             <div
                                 class="my-2 w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
@@ -410,7 +446,7 @@
                                 </div>
                             </div>
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">2018 - 2019</p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -420,7 +456,7 @@
                                 </div>
                             </div>
                             <div
-                                class="my-2 w-[49%] bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
+                                class="my-2 lg:w-[49%] w-full bg-gray-100 hover:bg-white hover:shadow-md px-4 py-4 border border-gray-300 rounded-lg">
                                 <div class="">
                                     <p class="text-base font-normal">2016 - 2017</p>
                                     <p class="flex items-center gap-2 leading-8"><span
@@ -431,70 +467,71 @@
                             </div>
                         </div>
                     </div>
-                    <div class="px-8 py-4 hidden" id="tab-4">
-                        <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-4 items-center justify-center">
+                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 hidden" id="tab-4">
+                        <div
+                            class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 gap-4 items-center justify-center">
                             <div
-                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-5.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold w-20">UI/UX design</h4>
+                                    <h4 class="lg:text-xl text-base font-bold w-20">UI/UX design</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
                             </div>
-                            <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8"
+                            <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
                                 id="tab-5">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-2.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold w-20">Brand Identity</h4>
+                                    <h4 class="lg:text-xl text-base font-bold w-20">Brand Identity</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
                             </div>
                             <div
-                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-3.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold w-20">Webflow Development</h4>
+                                    <h4 class="lg:text-xl text-base font-bold w-20">Wordpress Developer</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
                             </div>
                             <div
-                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-1.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold w-20">Interaction design</h4>
+                                    <h4 class="lg:text-xl text-base font-bold w-20">Interaction design</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
                             </div>
                             <div
-                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-4.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold w-20">Website design</h4>
+                                    <h4 class="lg:text-xl text-base font-bold w-20">Website design</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
                             </div>
                             <div
-                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 p-8">
+                                class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
                                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                     <img class="w-7" src="./assets/images/icons/icon-6.png" alt="" />
                                 </div>
                                 <div class="flex justify-between items-center pt-14">
-                                    <h4 class="text-xl font-bold">Mobile App design</h4>
+                                    <h4 class="lg:text-xl text-base font-bold">Mobile App design</h4>
                                     <span class="iconify text-2xl text-gray-500"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </div>
@@ -507,12 +544,12 @@
     </div>
 
     <!-- ==============Portfolio section============== -->
-    <div class="w-full flex justify-between items-center bg-[#FFE9D9] py-20">
-        <div class="container w-[1400px] mx-auto px-8">
+    <div class="w-full flex justify-between items-center bg-[#FFE9D9] lg:py-20 md:py-20 py-16">
+        <div class="container lg:w-[1400px] w-full mx-auto px-8">
             <div class="text-center">
                 <h3 class="text-xl font-bold heading-3 leading-9">Portfolio</h3>
-                <h2 class="text-7xl font-bold pt-3">My recent work</h2>
-                <div class="grid lg:grid-cols-2 items-center justify-center py-10">
+                <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-3">My recent work</h2>
+                <div class="grid lg:grid-cols-2 items-center justify-center lg:py-10 py-3">
                     <div class="p-6">
                         <img class="w-full object-cover"
                             src="https://www.hiveart.xyz/perez/assets/images/projects/project1.png" alt="" />
@@ -526,8 +563,8 @@
                         <div>
                             <div class=" ">
                                 <a href="https://nobeglobalsolutions.com" target="_blank"
-                                    class="text-4xl hover:text-gray-800 duration-200 mb-0 font-bold projects-links flex justify-between items-center">
-                                    Nobe Global Solutions <span class="iconify mt-3 text-3xl"
+                                    class="xl:text-4xl md:text-2xl text-xl hover:text-gray-800 duration-200 mb-0 font-bold projects-links flex justify-between items-center">
+                                    Nobe Global Solutions <span class="iconify mt-3 lg:text-3xl text-2xl"
                                         data-icon="tabler:arrow-up-right"></span>
                                 </a>
                             </div>
@@ -545,8 +582,8 @@
                         </div>
                         <div class=" ">
                             <a href="https://neshuns.com" target="_blank"
-                                class="text-4xl hover:text-gray-800 duration-200 mb-0 font-bold projects-links flex justify-between items-center">
-                                Service Consulting <span class="iconify mt-3 text-3xl"
+                                class="xl:text-4xl md:text-2xl text-xl hover:text-gray-800 duration-200 mb-0 font-bold projects-links flex justify-between items-center">
+                                Service Consulting <span class="iconify mt-3 lg:text-3xl text-2xl"
                                     data-icon="tabler:arrow-up-right"></span>
                             </a>
                         </div>
@@ -565,16 +602,17 @@
 
     <!-- =============Blogs section============== -->
     <div class="w-full flex justify-between items-center py-20">
-        <div class="container w-[1400px] mx-auto px-8">
+        <div class="container lg:w-[1400px] w-full mx-auto px-8">
             <div class="flex justify-center text-center w-[100%]">
                 <div class="relative text-center">
                     <h3 class="text-xl font-bold heading-3 leading-9">Blogs</h3>
-                    <h2 class="text-7xl font-bold pt-3">My blog post</h2>
-                    <div class="absolute top-14 left-64 -z-10 flex justify-center rounded-full w-16 h-16 bg-yellow-500">
+                    <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-3">My blog post</h2>
+                    <div
+                        class="absolute lg:top-14 top-10 lg:left-64 md:left-64 left-16 -z-10 flex justify-center rounded-full w-16 h-16 bg-yellow-500">
                     </div>
                 </div>
             </div>
-            <div class="grid lg:grid-cols-4 gap-4 py-10">
+            <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 py-10">
                 <div class="p-3">
                     <img class="w-full" src="https://www.hiveart.xyz/perez/assets/images/blog/blog1.png" alt="" />
                     <div class="flex items-center gap-5 p-2">
@@ -587,7 +625,7 @@
                             <h5 class="text-[14px] font-semibold heading-3 opacity-75">23 June 2024</h5>
                         </div>
                     </div>
-                    <a href="" class="text-2xl font-bold leading-8">
+                    <a href="javascript:void(0)" class="text-2xl font-bold leading-8">
                         <h3>Right-lo-left behind development in mobile web design</h3>
                     </a>
                 </div>
@@ -604,7 +642,7 @@
                                 <h5 class="text-[14px] font-semibold heading-3 opacity-75">23 June 2024</h5>
                             </div>
                         </div>
-                        <a href="" class="text-2xl font-bold leading-8">
+                        <a href="javascript:void(0)" class="text-2xl font-bold leading-8">
                             <h3>Right-lo-left behind development in mobile web design</h3>
                         </a>
                     </div>
@@ -621,7 +659,7 @@
                             <h5 class="text-[14px] font-semibold heading-3 opacity-75">23 June 2024</h5>
                         </div>
                     </div>
-                    <a href="" class="text-2xl font-bold leading-8">
+                    <a href="javascript:void(0)" class="text-2xl font-bold leading-8">
                         <h3>Right-lo-left behind development in mobile web design</h3>
                     </a>
                 </div>
@@ -638,7 +676,7 @@
                                 <h5 class="text-[14px] font-semibold heading-3 opacity-75">23 June 2024</h5>
                             </div>
                         </div>
-                        <a href="" class="text-2xl font-bold leading-8">
+                        <a href="javascript:void(0)" class="text-2xl font-bold leading-8">
                             <h3>Right-lo-left behind development in mobile web design</h3>
                         </a>
                     </div>
@@ -646,15 +684,17 @@
             </div>
         </div>
     </div>
-
     <!-- =============footer============== -->
-    <footer class="w-full flex justify-between items-center py-24 bg-black">
-        <div class="container w-[1400px] mx-auto px-8">
-            <div class="grid lg:grid-cols-3 items-center justify-center">
-                <div class="">
+    <footer class="w-full flex justify-between items-center py-24 bg-black" id="contact">
+        <div class="container lg:w-[1400px] w-full mx-auto px-8">
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 items-center justify-center">
+                <div class="lg:py-0 py-5">
                     <div class="relative z-20">
-                        <h2 class="text-7xl font-bold pt-4 text-white z-20">Le t’s work together</h2>
-                        <div class="absolute top-5 -left-2 w-16 h-16 rounded-full bg-yellow-500 -z-10"></div>
+                        <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-4 text-white z-20">Le t’s work together
+                        </h2>
+                        <div
+                            class="absolute lg:top-5 md:top-0 top-0 -left-2 w-16 h-16 rounded-full bg-yellow-500 -z-10">
+                        </div>
                     </div>
                     <div class="flex flex-wrap gap-4 items-center pt-8">
                         <h4 class="text-white text-2xl font-semibold">Based In India &nbsp;|</h4>
@@ -677,22 +717,24 @@
                     </div>
                 </div>
 
-                <div class="border border-gray-600 opacity-70 shadow-md rounded-lg m-3 p-6 h-full">
+                <div class="border border-gray-600 opacity-70 shadow-md rounded-lg xl:m-3 m-2 xl:p-6 p-4 h-full">
                     <h4 class="text-xl font-medium text-white h-[30px]">Looking for a hectic developer?</h4>
                     <div class="w-full h-full flex items-end pt-20 pb-5">
                         <a href="mailto:pinkurathour2016@gmail.com"
                             class="projects-links flex justify-between w-full items-center">
-                            <h4 class="text-yellow-500 text-2xl font-medium">pinkurathour2016@gmail.com</h4>
+                            <h4 class="text-yellow-500 xl:text-2xl lg:text-xl font-medium">pinkurathour2016@gmail.com
+                            </h4>
                             <span class="iconify mt-1 text-3xl text-white" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </div>
                 </div>
-                <div class="border border-gray-600 opacity-70 shadow-md rounded-lg m-3 p-6 h-full">
+                <div
+                    class="border border-gray-600 opacity-70 shadow-md rounded-lg m-3 p-6 h-full lg:mt-0 md:mt-10 mt-10">
                     <h4 class="text-xl font-medium text-white h-[30px]">Want a more in-depth look at my history?</h4>
                     <div class="w-full h-full flex items-end pt-20 pb-5">
                         <a href="tel:+91 7355462016"
                             class="projects-links flex w-full justify-between gap-4 items-center">
-                            <h4 class="text-yellow-500 text-2xl font-medium">+91 735-5462-016</h4>
+                            <h4 class="text-yellow-500 xl:text-2xl lg:text-xl font-medium">+91 735-5462-016</h4>
                             <span class="iconify mt-1 text-3xl text-white" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </div>
@@ -702,14 +744,16 @@
                 <h1 class="text-white">PK.RATHOUR</h1>
             </div>
             <div class="border-t-2 pt-10 flex justify-between items-center">
-                <h5 class="text-white font-semibold text-xl">&copy; 2024 Pinku Rathour, All Rights Reserved.</h5>
+                <h5 class="text-white font-semibold lg:text-xl md:text-xl text-base">&copy; 2024 Pinku Rathour, All
+                    Rights Reserved.</h5>
 
-                <h4 class="text-white font-semibold cursor-pointer text-xl flex items-center hover:text-yellow-500">Back
-                    to Top <span class="iconify font-bold text-2xl" data-icon="lets-icons:arrow-top"></span></h4>
+                <h4
+                    class=" p-2 rounded-md font-semibold cursor-pointer lg:text-xl text-base flex bg-slate-200 text-black items-center hover:text-yellow-500">
+                    <span class="iconify font-bold lg:text-2xl text-base" data-icon="lets-icons:arrow-top"></span>
+                </h4>
             </div>
         </div>
     </footer>
-
     <!-- =======================side navbar section=================== -->
     <div id="toggleNav"
         class="offcanvas lg:w-[30%] md:w-[30%] w-full bg-[#080808] fixed top-0 bottom-0 right-0 invisible">
