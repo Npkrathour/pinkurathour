@@ -9,6 +9,7 @@
     <meta name="keywords" content="Tailwind, CSS, JavaScript, Jquery">
     <meta name="author" content="Pinku Rathour">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .offcanvas {
@@ -42,17 +43,19 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="w-full lg:w-auto bg-[#FFE9D9] lg:py-0 md:py-0 py-10">
+    <section class="w-full lg:w-auto bg-[#FFE9D9] lg:py-0 md:py-0 py-10 overflow-hidden">
         <div class="grid w-full lg:w-auto lg:grid-cols-2 grid-cols-1 items-center">
             <div class="xl:p-24 lg:pt-20 pt-20">
                 <div class="p-5">
                     <span class="flex items-center gap-3 ">
                         <span class="w-16 h-0.5 bg-black"></span>
-                        <p class="text-2xl font-bold opacity-80">Hello, I’m 👋</p>
+                        <p class="text-2xl font-bold opacity-80" data-aos="fade-right" data-aos-duration="1200">Hello,
+                            I’m 👋</p>
                     </span>
-                    <h1 class="py-3 ">Pinku Rathour</h1>
-                    <p class="text-2xl font-bold opacity-80 leading-10 ">Frontend & UI/UX Developer</p>
-                    <div class="flex items-center gap-5 py-3 ">
+                    <h1 class="py-3 " data-aos="fade-right" data-aos-duration="1600">Pinku Rathour</h1>
+                    <p class="text-2xl font-bold opacity-80 leading-10 " data-aos="fade-right" data-aos-duration="2000">
+                        Frontend & UI/UX Developer</p>
+                    <div class="flex items-center gap-5 py-3 " data-aos="fade-right" data-aos-duration="2400">
                         <a class="hover:bg-transparent hover:text-black duration-500 px-6 py-3 border-gray-400 border rounded-lg bg-black text-white text-base font-semibold inline-flex items-center gap-3"
                             href="#contact">
                             Let's Talk <span class="iconify text-2xl hover:text-black"
@@ -62,7 +65,8 @@
                             href="#">My Work <span class="iconify text-2xl"
                                 data-icon="tabler:arrow-up-right"></span></a>
                     </div>
-                    <div class="flex w-full flex-wrap items-center xl:pt-8 gap-6 lg:py-0 md:py-0 py-2">
+                    <div class="flex w-full flex-wrap items-center xl:pt-8 gap-6 lg:py-0 md:py-0 py-2"
+                        data-aos="fade-up" data-aos-duration="2000">
                         <h3 class="text-2xl font-bold opacity-80 leading-10"><span
                                 class="text-4xl font-bold">1.2k+</span>
                             Worldwide client &nbsp;<span class="text-gray-800">|</span></h3>
@@ -85,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:-mt-11 xl:block lg:block sm:hidden hidden">
+            <div class="xl:-mt-11 xl:block lg:block sm:hidden hidden" data-aos="fade-left" data-aos-duration="2000">
                 <div class="w-full lg:w-auto">
                     <img class="w-full xl:w-full object-cover" src="./assets/images/hero.png" alt="Hero Image" />
                 </div>
@@ -94,17 +98,21 @@
     </section>
 
     <!-- Service section -->
-    <section class="w-full py-16 flex justify-between items-center overflow-hidden">
+    <section class="w-full py-16 flex justify-between items-center overflow-hidden" data-aos="fade-up"
+        data-aos-duration="1200">
         <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div class="grid lg:grid-cols-2 md:grid-cols-2 justify-center items-center">
                 <div class="relative">
-                    <h3 class="text-xl  font-bold heading-3 leading-9">Services</h3>
-                    <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold opacity-80 leading-10 pt-4">My specialties
+                    <h3 class="text-xl  font-bold heading-3 leading-9" data-aos="fade-right" data-aos-duration="1800">
+                        Services</h3>
+                    <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold opacity-80 leading-10 pt-4"
+                        data-aos="fade-right" data-aos-duration="2000">My specialties
                     </h2>
                     <div class="absolute top-8 -left-2 w-20 h-20 rounded-full bg-yellow-500 -z-10"></div>
                 </div>
                 <div class="w-full">
-                    <p class="text-lg font-medium text-gray-500 pt-12">Synergistically seize front-end methods of
+                    <p class="text-lg font-medium text-gray-500 pt-12" data-aos="fade-left" data-aos-duration="2000">
+                        Synergistically seize front-end methods of
                         empowerment without extensive core competencies. Progressively repurpose alternative platforms.
                     </p>
                 </div>
@@ -113,8 +121,8 @@
                 <div class="lg:col-span-2">
                     <div
                         class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 gap-2 items-center justify-center">
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-right" data-aos-duration="800">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-5.png" alt="UI/UX Design Icon" />
                             </div>
@@ -123,8 +131,8 @@
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-right" data-aos-duration="1200">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-2.png" alt="Brand Identity Icon" />
                             </div>
@@ -133,8 +141,8 @@
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-up" data-aos-duration="1600">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-3.png"
                                     alt="Webflow Development Icon" />
@@ -144,8 +152,8 @@
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-up" data-aos-duration="2000">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-1.png" alt="Interaction Design Icon" />
                             </div>
@@ -154,8 +162,8 @@
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-up" data-aos-duration="2400">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-4.png" alt="Website Design Icon" />
                             </div>
@@ -164,8 +172,8 @@
                                 <span class="iconify text-2xl text-gray-500" data-icon="tabler:arrow-up-right"></span>
                             </div>
                         </div>
-                        <div
-                            class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4">
+                        <div class="bg-gray-100 hover:bg-white hover:shadow-lg hover:text-yellow-500 duration-200 w-full h-full rounded-lg py-5 lg:p-8 p-4"
+                            data-aos="fade-up" data-aos-duration="3000">
                             <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
                                 <img class="w-7" src="./assets/images/icons/icon-6.png" alt="Mobile App Design Icon" />
                             </div>
@@ -176,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-black px-10 py-10 rounded-lg h-full">
+                <div class="bg-black px-10 py-10 rounded-lg h-full" data-aos="flip-up" data-aos-duration="3000">
                     <div class="flex text-end justify-end">
                         <span class="iconify text-8xl text-yellow-500" data-icon="tabler:arrow-up-right"></span>
                     </div>
@@ -193,7 +201,7 @@
     <section class="w-full flex justify-between items-center overflow-hidden">
         <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div class="grid lg:grid-cols-2 items-center justify-center">
-                <div class="relative">
+                <div class="relative" data-aos="fade-up" data-aos-duration="2000">
                     <div class="w-full h-[600]">
                         <img class="max-w-[80%] w-full h-full object-cover" src="./assets/images/about1.png" alt="" />
                     </div>
@@ -208,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full lg:pt-0 pt-10">
+                <div class="w-full lg:pt-0 pt-10" data-aos="fade-right" data-aos-duration="3000">
                     <h4 class="text-xl font-bold heading-3 leading-9">Hello I'm</h4>
                     <h2 class="xl:text-7xl lg:text-4xl text-2xl font-bold">Pinku Rathour, Frontend & UI/UX Developer
                     </h2>
@@ -221,15 +229,15 @@
                         audience in and making them .
                     </p>
                     <div class="flex justify-between items-center">
-                        <div class="">
+                        <div class="" data-aos="fade-up" data-aos-duration="2000">
                             <h5 class="text-4xl font-bold opacity-80">02</h5>
                             <p class="text-lg font-medium text-gray-500 py-3">Award winner</p>
                         </div>
-                        <div class="">
+                        <div class="" data-aos="fade-up" data-aos-duration="2400">
                             <h5 class="text-4xl font-bold opacity-80">1.2k</h5>
                             <p class="text-lg font-medium text-gray-500 py-3">Worldwide client</p>
                         </div>
-                        <div class="">
+                        <div class="" data-aos="fade-up" data-aos-duration="2600">
                             <h5 class="text-4xl font-bold opacity-80">02</h5>
                             <p class="text-lg font-medium text-gray-500 py-3">Job done successfully</p>
                         </div>
@@ -252,7 +260,7 @@
             <div
                 class="grid xl:grid-cols-3 lg:grid-cols-3 lg:gap-5 w-full gap-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xl:justify-between lg:justify-between justify-center">
                 <div class="py-4">
-                    <div class="relative">
+                    <div class="relative" data-aos="fade-up" data-aos-duration="2000">
                         <h3 class="text-xl font-bold heading-3 leading-9">Resume</h3>
                         <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-4">All over my details find here...
                         </h2>
@@ -260,7 +268,8 @@
                     </div>
                     <div class="lg:pt-0 pt-3">
                         <ul class="w-full my-5">
-                            <li class="py-4 bg-black text-white p-3 rounded-lg my-5 tabs1" onclick="tabFunction1()">
+                            <li class="py-4 bg-black text-white p-3 rounded-lg my-5 tabs1" onclick="tabFunction1()"
+                                data-aos="fade-up" data-aos-duration="2000">
                                 <a class="text-xl font-semibold flex justify-between items-center w-full text-white"
                                     href="javascript:void(0)">
                                     <p class="">About Me</p>
@@ -268,7 +277,7 @@
                                 </a>
                             </li>
                             <li class="py-4 bg-gray-100 hover:bg-white hover:shadow-md text-black p-3 rounded-lg my-5"
-                                onclick="tabFunction2()">
+                                onclick="tabFunction2()" data-aos="fade-up" data-aos-duration="2400">
                                 <a class="text-xl font-semibold flex justify-between items-center w-full"
                                     href="javascript:void(0)">
                                     <p>Experience</p>
@@ -276,7 +285,7 @@
                                 </a>
                             </li>
                             <li class="py-4 bg-gray-100 hover:bg-white hover:shadow-md text-black p-3 rounded-lg my-5"
-                                onclick="tabFunction3()">
+                                onclick="tabFunction3()" data-aos="fade-up" data-aos-duration="2800">
                                 <a class="text-xl font-semibold flex justify-between items-center w-full"
                                     href="javascript:void(0)">
                                     <p>Education</p>
@@ -284,7 +293,7 @@
                                 </a>
                             </li>
                             <li class="py-4 bg-gray-100 hover:bg-white hover:shadow-md text-black p-3 rounded-lg my-5"
-                                onclick="tabFunction4()">
+                                onclick="tabFunction4()" data-aos="fade-up" data-aos-duration="3000">
                                 <a class="text-xl font-semibold flex justify-between items-center w-full"
                                     href="javascript:void(0)">
                                     <p>Skills</p>
@@ -295,7 +304,8 @@
                     </div>
                 </div>
                 <div class="col-span-2">
-                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 tabs-1 block" id="tab-1">
+                    <div class="xl:px-8 lg:px-6 md:px-4 py-4 tabs-1 block" id="tab-1" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <h3 class="text-4xl font-bold opacity-80">Based In India</h3>
                         <p class="text-lg font-medium text-gray-500 py-4">
                             Pinku Rathour, <span class="text-black">Frontend UI Developer</span> based in <span
@@ -547,10 +557,12 @@
     <div class="w-full flex justify-between items-center bg-[#FFE9D9] lg:py-20 md:py-20 py-16">
         <div class="container lg:w-[1400px] w-full mx-auto px-8">
             <div class="text-center">
-                <h3 class="text-xl font-bold heading-3 leading-9">Portfolio</h3>
-                <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-3">My recent work</h2>
+                <h3 class="text-xl font-bold heading-3 leading-9" data-aos="fade-up" data-aos-duration="1000">Portfolio
+                </h3>
+                <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-3" data-aos="fade-up" data-aos-duration="1200">
+                    My recent work</h2>
                 <div class="grid lg:grid-cols-2 items-center justify-center lg:py-10 py-3">
-                    <div class="p-6">
+                    <div class="p-6" data-aos="fade-up" data-aos-duration="1400">
                         <img class="w-full object-cover"
                             src="https://www.hiveart.xyz/perez/assets/images/projects/project1.png" alt="" />
                         <div class="py-3 flex items-center gap-3">
@@ -570,7 +582,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6" data-aos="fade-up" data-aos-duration="1800">
                         <img src="https://www.hiveart.xyz/perez/assets/images/projects/project2.png" alt=""
                             class="w-full object-cover" />
                         <div class="py-3 flex items-center gap-3">
@@ -590,7 +602,7 @@
                     </div>
                 </div>
 
-                <div class="p-6">
+                <div class="p-6" data-aos="fade-up" data-aos-duration="2000">
                     <a href=""
                         class="text-xl hover:bg-transparent border-black border hover:border hover:text-black bg-black py-3 rounded-lg w-full flex justify-center items-center font-semibold text-white projects-links">
                         View All Projects
@@ -604,7 +616,7 @@
     <div class="w-full flex justify-between items-center py-20">
         <div class="container lg:w-[1400px] w-full mx-auto px-8">
             <div class="flex justify-center text-center w-[100%]">
-                <div class="relative text-center">
+                <div class="relative text-center" data-aos="fade-up" data-aos-duration="1400">
                     <h3 class="text-xl font-bold heading-3 leading-9">Blogs</h3>
                     <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-3">My blog post</h2>
                     <div
@@ -613,7 +625,7 @@
                 </div>
             </div>
             <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 py-10">
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-duration="1000">
                     <img class="w-full" src="https://www.hiveart.xyz/perez/assets/images/blog/blog1.png" alt="" />
                     <div class="flex items-center gap-5 p-2">
                         <div class="flex items-center gap-2">
@@ -629,7 +641,7 @@
                         <h3>Right-lo-left behind development in mobile web design</h3>
                     </a>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-duration="1400">
                     <div class="pt-10">
                         <img class="w-full" src="https://www.hiveart.xyz/perez/assets/images/blog/blog2.png" alt="" />
                         <div class="flex items-center gap-5 p-2">
@@ -647,7 +659,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-duration="1800">
                     <img class="w-full" src="https://www.hiveart.xyz/perez/assets/images/blog/blog3.png" alt="" />
                     <div class="flex items-center gap-5 p-2">
                         <div class="flex items-center gap-2">
@@ -663,7 +675,7 @@
                         <h3>Right-lo-left behind development in mobile web design</h3>
                     </a>
                 </div>
-                <div class="p-3">
+                <div class="p-3" data-aos="fade-up" data-aos-duration="2200">
                     <div class="pt-10">
                         <img class="w-full" src="https://www.hiveart.xyz/perez/assets/images/blog/blog4.png" alt="" />
                         <div class="flex items-center gap-5 p-2">
@@ -685,8 +697,8 @@
         </div>
     </div>
     <!-- =============footer============== -->
-    <footer class="w-full flex justify-between items-center py-24 bg-black" id="contact">
-        <div class="container lg:w-[1400px] w-full mx-auto px-8">
+    <footer class="w-full flex justify-between items-center py-24 bg-black overflow-hidden" id="contact">
+        <div class="container lg:w-[1400px] w-full mx-auto px-8" data-aos="flip-down" data-aos-duration="2000">
             <div class="grid lg:grid-cols-3 md:grid-cols-1 items-center justify-center">
                 <div class="lg:py-0 py-5">
                     <div class="relative z-20">
@@ -845,7 +857,8 @@
     <!-- ========================Script============== -->
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/lib/tailwind.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+    <script src="./assets/lib/iconify.js"></script>
+    <script src="./assets/lib/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

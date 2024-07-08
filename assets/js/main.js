@@ -83,3 +83,4 @@ function tabFunction4() {
   tab5.classList.add("hidden");
   tab5.classList.remove("block");
 }
+AOS.init();
