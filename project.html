@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinku Rathour</title>
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="Tailwind, CSS, JavaScript, Jquery">
+    <meta name="author" content="Pinku Rathour">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/lib/tailwind.js"></script>
+
+    <style>
+        .offcanvas {
+            transition: transform 0.3s ease, visibility 0.3s ease;
+            transform: translateX(100%);
+            visibility: hidden;
+        }
+
+        .offcanvas.visible {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center w-full lg:w-full border-b border-b-gray-700 border-opacity-45 fixed navbar-bg"
+        id="top">
+        <div class="navbrand ps-5 w-auto">
+            <a href="index.html"><img src="./assets/images/logo.png" alt="Logo" /></a>
+        </div>
+        <div class="flex w-auto items-center gap-3">
+            <a href="#" class="inline-flex items-center gap-3 text-base font-medium">Let's Talk <span
+                    class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span></a>
+            <div class="w-[95px] h-[80px] bg-black flex justify-center items-center cursor-pointer"
+                onclick="toggleFunction()">
+                <span class="iconify text-white text-2xl cursor-pointer" data-icon="heroicons:bars-2-20-solid"
+                    width="1rem" height="1rem"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= -->
+    <section class="w-full lg:w-auto overflow-hidden py-28">
+        <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-2">
+            <div class="relative text-center pt-10 pb-8">
+                <h3 class="text-xl  font-bold heading-3" data-aos="fade-right" data-aos-duration="1800">
+                    Portfolio</h3>
+                <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold opacity-80 leading-10 pt-2" data-aos="fade-right"
+                    data-aos-duration="2000">My recent work
+                </h2>
+                <div
+                    class="absolute lg:top-16 top-10 lg:left-96 left-52 translate-x-44 flex justify-center w-20 h-20 rounded-full bg-yellow-500 -z-10">
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center items-center lg:gap-10 gap-5 w-full lg:px-10 px-0">
+                <div class="lg:w-[38%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover  rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project1.png" alt="">
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+
+                </div>
+                <div class="lg:w-[58%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project6.png" alt="">
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+
+                <div class="lg:w-[31%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover  rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project3.png" alt="">
+
+
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="lg:w-[31%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project4.png" alt="">
+
+
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="lg:w-[31%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project5.png" alt="">
+
+
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="lg:w-[58%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden ">
+                    <img class="w-full object-cover rounded-2xl h-[100%]"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project6.png" alt="">
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+                <div class="lg:w-[38%] md:w-[47%] w-full lg:h-[350px] h-[350px] relative group overflow-hidden">
+                    <img class="w-full object-cover rounded-2xl h-full"
+                        src="https://www.hiveart.xyz/perez/assets/images/portfolios/project7.png" alt="">
+                    <a href=""
+                        class="absolute -bottom-10 rounded-bl-xl rounded-br-xl w-full p-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 group-hover:duration-700 transition-all duration-500">
+                        <h2
+                            class="xl:text-3xl lg:text-3xl text-2xl font-bold text-white hover:text-yellow-500 flex justify-between items-center">
+                            Pinku
+                            Rathour <span class="iconify text-5xl mb-0 pt-2" data-icon="tabler:arrow-up-right"></span>
+                        </h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============footer============== -->
+    <footer class="w-full flex justify-between items-center py-24 bg-black overflow-hidden" id="contact">
+        <div class="container lg:w-[1400px] w-full mx-auto px-8" data-aos="flip-down" data-aos-duration="2000">
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 items-center justify-center">
+                <div class="lg:py-0 py-5">
+                    <div class="relative z-20">
+                        <h2 class="xl:text-7xl lg:text-5xl text-3xl font-bold pt-4 text-white z-20">Le t’s work together
+                        </h2>
+                        <div
+                            class="absolute lg:top-5 md:top-0 top-0 -left-2 w-16 h-16 rounded-full bg-yellow-500 -z-10">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 items-center pt-8">
+                        <h4 class="text-white text-2xl font-semibold">Based In India &nbsp;|</h4>
+                        <ul class="flex items-center gap-4">
+                            <li>
+                                <a target="_blank" href="https://github.com/Npkrathour"><span
+                                        class="iconify text-3xl text-white" data-icon="bi:github"></span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/in/pinkurathour/"><span
+                                        class="iconify text-3xl text-white"
+                                        data-icon="entypo-social:linkedin-with-circle"></span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://dribbble.com/npkrathour"><span
+                                        class="iconify text-3xl text-white"
+                                        data-icon="icon-park-solid:dribble"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border border-gray-600 opacity-70 shadow-md rounded-lg xl:m-3 m-2 xl:p-6 p-4 h-full">
+                    <h4 class="text-xl font-medium text-white h-[30px]">Looking for a hectic developer?</h4>
+                    <div class="w-full h-full flex items-end pt-20 pb-5">
+                        <a href="mailto:pinkurathour2016@gmail.com"
+                            class="projects-links flex justify-between w-full items-center">
+                            <h4 class="text-yellow-500 xl:text-2xl lg:text-xl font-medium">pinkurathour2016@gmail.com
+                            </h4>
+                            <span class="iconify mt-1 text-3xl text-white" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="border border-gray-600 opacity-70 shadow-md rounded-lg m-3 p-6 h-full lg:mt-0 md:mt-10 mt-10">
+                    <h4 class="text-xl font-medium text-white h-[30px]">Want a more in-depth look at my history?</h4>
+                    <div class="w-full h-full flex items-end pt-20 pb-5">
+                        <a href="tel:+91 7355462016"
+                            class="projects-links flex w-full justify-between gap-4 items-center">
+                            <h4 class="text-yellow-500 xl:text-2xl lg:text-xl font-medium">+91 735-5462-016</h4>
+                            <span class="iconify mt-1 text-3xl text-white" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-14 pb-8 footer-brand-name">
+                <h1 class="text-white">PK.RATHOUR</h1>
+            </div>
+            <div class="border-t-2 pt-10 flex justify-between items-center">
+                <h5 class="text-white font-semibold lg:text-xl md:text-xl text-base">&copy; 2024 Pinku Rathour, All
+                    Rights Reserved.</h5>
+
+                <h4
+                    class=" p-2 rounded-md font-semibold cursor-pointer lg:text-xl text-base flex bg-slate-200 text-black items-center hover:text-yellow-500">
+                    <span class="iconify font-bold lg:text-2xl text-base" data-icon="lets-icons:arrow-top"></span>
+                </h4>
+            </div>
+        </div>
+    </footer>
+    <!-- =======================side navbar section=================== -->
+    <div id="toggleNav"
+        class="offcanvas lg:w-[30%] md:w-[30%] w-full bg-[#080808] fixed top-0 bottom-0 right-0 invisible">
+        <div class="">
+            <div class="flex justify-between items-center border-b border-gray-500">
+                <div class="p-4">
+                    <img src="assets/images/offcanvas-logo.png" alt="" />
+                </div>
+                <div onclick="removeToggle()"
+                    class="bg-[#FFB646] w-20 h-20 flex justify-center items-center cursor-pointer">
+                    <span class="iconify text-white text-2xl" data-icon="akar-icons:cross"></span>
+                </div>
+            </div>
+            <div class="p-10 text-white">
+                <ul class="w-full my-5">
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400 text-white"
+                            href="">
+                            <p class="">Home</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>About</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>Projects</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>Portfolio</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>Blogs</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>Blogs Details</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                    <li class="border-b border-gray-600 py-4">
+                        <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
+                            href="">
+                            <p>Contact Us</p>
+                            <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="w-full flex items-center gap-6 pt-20 p-2">
+                    <li>
+                        <a target="_blank" href="https://github.com/Npkrathour"><span
+                                class="iconify text-3xl text-white" data-icon="bi:github"></span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/pinkurathour/"><span
+                                class="iconify text-3xl text-white"
+                                data-icon="entypo-social:linkedin-with-circle"></span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://dribbble.com/npkrathour"><span
+                                class="iconify text-3xl text-white" data-icon="icon-park-solid:dribble"></span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="##"><span class="iconify text-3xl text-white"
+                                data-icon="streamline:instagram-solid"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================Script============== -->
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/lib/iconify.js"></script>
+    <script src="./assets/lib/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

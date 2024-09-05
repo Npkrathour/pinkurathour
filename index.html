@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/lib/tailwind.js"></script>
     <style>
         .offcanvas {
             transition: transform 0.3s ease, visibility 0.3s ease;
@@ -198,7 +199,7 @@
         </div>
     </section>
     <!-- ============================= -->
-    <section class="w-full flex justify-between items-center overflow-hidden">
+    <section class="w-full flex justify-between items-center overflow-hidden" id="about">
         <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div class="grid lg:grid-cols-2 items-center justify-center">
                 <div class="relative" data-aos="fade-up" data-aos-duration="2000">
@@ -254,8 +255,8 @@
         </div>
     </section>
     <!-- ============My Resume section============ -->
-    <div
-        class="w-full flex justify-center items-center bg-[#F5F5F5 lg:py-20 lg:my-10 md:py-20 md:my-10 py-5 overflow-hidden">
+    <div class="w-full flex justify-center items-center bg-[#F5F5F5 lg:py-20 lg:my-10 md:py-20 md:my-10 py-5 overflow-hidden"
+        id="resume">
         <div class="container lg:w-[1400px] w-full mx-auto xl:px-8 lg:px-6 px-4">
             <div
                 class="grid xl:grid-cols-3 lg:grid-cols-3 lg:gap-5 w-full gap-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xl:justify-between lg:justify-between justify-center">
@@ -613,7 +614,7 @@
     </div>
 
     <!-- =============Blogs section============== -->
-    <div class="w-full flex justify-between items-center py-20">
+    <div class="w-full flex justify-between items-center py-20" id="blogs">
         <div class="container lg:w-[1400px] w-full mx-auto px-8">
             <div class="flex justify-center text-center w-[100%]">
                 <div class="relative text-center" data-aos="fade-up" data-aos-duration="1400">
@@ -783,43 +784,43 @@
                 <ul class="w-full my-5">
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400 text-white"
-                            href="">
+                            href="index.html">
                             <p class="">Home</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
-                            href="">
+                            href="#about">
                             <p>About</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
-                            href="">
+                            href="project.html">
                             <p>Projects</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
-                            href="">
+                            href="project.html">
                             <p>Portfolio</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
-                            href="">
-                            <p>Blogs</p>
+                            href="#resume">
+                            <p>Resume</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
                     <li class="border-b border-gray-600 py-4">
                         <a class="text-xl font-semibold flex justify-between items-center w-full hover:text-yellow-400"
-                            href="">
-                            <p>Blogs Details</p>
+                            href="#blogs">
+                            <p>Blogs</p>
                             <span class="iconify text-2xl" data-icon="tabler:arrow-up-right"></span>
                         </a>
                     </li>
@@ -856,7 +857,6 @@
 
     <!-- ========================Script============== -->
     <script src="./assets/lib/jquery.js"></script>
-    <script src="./assets/lib/tailwind.js"></script>
     <script src="./assets/lib/iconify.js"></script>
     <script src="./assets/lib/aos.js"></script>
     <script src="./assets/js/main.js"></script>
