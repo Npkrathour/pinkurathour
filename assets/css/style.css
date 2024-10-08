@@ -99,4 +99,8 @@ h1 {
   .footer-brand-name h1 {
     font-size: 40px !important;
   }
+  h1 {
+    font-size: 60px !important;
+    line-height: 60px !important;
+  }
 }
