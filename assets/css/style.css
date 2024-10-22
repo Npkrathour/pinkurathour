@@ -68,6 +68,13 @@ h1 {
 .offcanvas {
   z-index: 9999;
 }
+.overlay {
+  background-color: #000000c4;
+  position: absolute;
+  z-index: -9;
+  inset: 0%;
+}
+
 @media screen and (max-width: 1440px) {
   .footer-brand-name h1 {
     font-size: 120px !important;
