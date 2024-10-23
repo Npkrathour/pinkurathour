@@ -84,3 +84,13 @@ function tabFunction4() {
   tab5.classList.remove("block");
 }
 AOS.init();
+
+var tl1 = gsap.timeline();
+
+tl1.from(".text-right-animation", {
+  duration: 1.5, // Time for each element to complete its animation
+  opacity: 0, // Fades in from transparent
+  x: -50, // Moves 50px from the left
+  stagger: 0.3, // Staggering to create delay between elements
+  ease: "power2.out", // Smooth easing function for natural motion
+});
